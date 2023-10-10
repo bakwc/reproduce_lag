@@ -197,7 +197,7 @@ MonoBehaviour:
   _teleportThreshold: 1
   _scaleThreshold: 1
   _clientAuthoritative: 0
-  _sendToOwner: 0
+  _sendToOwner: 1
   _enableNetworkLod: 1
   _interval: 1
   _synchronizePosition: 1
@@ -231,4 +231,4 @@ MonoBehaviour:
   _addedNetworkObject: {fileID: 3007924299584809693}
   _networkObjectCache: {fileID: 3007924299584809693}
   FORCE_DIRECTION: {x: 1, y: 0, z: 0}
-  THRUST: 0
+  THRUST: 500

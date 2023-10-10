@@ -9,6 +9,7 @@ public class TestObject : NetworkBehaviour
     public float THRUST;
     void Start()
     {
+        Camera.main.GetComponent<SmoothFollow>().OBJECT_TO_TRACK = gameObject;
     }
 
     // Update is called once per frame

@@ -6,18 +6,19 @@ using FishNet.Object;
 public class GameManager : NetworkBehaviour
 {
     public GameObject OBJECT_TO_SPAWN;
+    bool spawned = false;
     void Start()
     {
-        if (base.IsServer) 
-        {
-            SpawnObject();
-        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (base.IsServer && !spawned) 
+        {
+            SpawnObject();
+            spawned = true;
+        }
     }
 
     void SpawnObject()
