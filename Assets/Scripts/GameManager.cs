@@ -7,6 +7,7 @@ public class GameManager : NetworkBehaviour
 {
     public GameObject OBJECT_TO_SPAWN;
     bool spawned = false;
+    bool observer_added = false;
     void Start()
     {
     }
