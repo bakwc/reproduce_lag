@@ -12,7 +12,7 @@ public class SmoothFollow : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if (OBJECT_TO_TRACK == null)
         {

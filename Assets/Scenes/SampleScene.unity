@@ -519,7 +519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OBJECT_TO_TRACK: {fileID: 0}
-  smoothTime: 0.1
+  smoothTime: 0.5
 --- !u!1 &2127848442
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,6 +1117,8 @@ GameObject:
   - component: {fileID: 7443408888452064890}
   - component: {fileID: 427968348}
   - component: {fileID: 7443408888452064892}
+  - component: {fileID: 7443408888452064893}
+  - component: {fileID: 7443408888452064894}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -1139,6 +1141,37 @@ MonoBehaviour:
   _playerPrefab: {fileID: 8433921753168001768, guid: 02c6ddc28afe44861b5dafc89d9b2aa1, type: 3}
   _addToDefaultScene: 1
   Spawns: []
+--- !u!114 &7443408888452064893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7443408888452064891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fdaae44044276a49a52229c1597e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _updateOrder: 0
+  _timingType: 0
+  _allowTickDropping: 1
+  _maximumFrameTicks: 2
+  _tickRate: 30
+  _pingInterval: 1
+  _physicsMode: 1
+--- !u!114 &7443408888452064894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7443408888452064891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49d25dfd8fffc47a19eebc1b18c83724, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &9139860297382430467
 RectTransform:
   m_ObjectHideFlags: 0
